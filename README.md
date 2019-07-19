@@ -1,1 +1,3 @@
 # Swift_ChatTextInput
+
+LINE風のスタンプ選択、スラック風のメンション一覧、NSAttributeStringを用いたテキスト入力欄のサンプル
