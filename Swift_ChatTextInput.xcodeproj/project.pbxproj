@@ -14,6 +14,10 @@
 		56DF15E922E1E7AF000465F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DF15E722E1E7AF000465F1 /* LaunchScreen.storyboard */; };
 		56DF15F422E1E7AF000465F1 /* Swift_ChatTextInputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DF15F322E1E7AF000465F1 /* Swift_ChatTextInputTests.swift */; };
 		56DF15FF22E1E7AF000465F1 /* Swift_ChatTextInputUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DF15FE22E1E7AF000465F1 /* Swift_ChatTextInputUITests.swift */; };
+		56DF161222E49069000465F1 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DF161122E49069000465F1 /* EmojiView.swift */; };
+		56DF161422E4907E000465F1 /* EmojiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DF161322E4907E000465F1 /* EmojiView.xib */; };
+		56DF161622E490E6000465F1 /* EmojiViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DF161522E490E6000465F1 /* EmojiViewCell.swift */; };
+		56DF161822E49100000465F1 /* EmojiViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56DF161722E49100000465F1 /* EmojiViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		56DF15FA22E1E7AF000465F1 /* Swift_ChatTextInputUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_ChatTextInputUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DF15FE22E1E7AF000465F1 /* Swift_ChatTextInputUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_ChatTextInputUITests.swift; sourceTree = "<group>"; };
 		56DF160022E1E7AF000465F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56DF161122E49069000465F1 /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
+		56DF161322E4907E000465F1 /* EmojiView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmojiView.xib; sourceTree = "<group>"; };
+		56DF161522E490E6000465F1 /* EmojiViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiViewCell.swift; sourceTree = "<group>"; };
+		56DF161722E49100000465F1 /* EmojiViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmojiViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 		56DF15DD22E1E7AE000465F1 /* Swift_ChatTextInput */ = {
 			isa = PBXGroup;
 			children = (
+				56DF161022E4904B000465F1 /* View */,
 				56DF160D22E1F118000465F1 /* ViewController */,
 				56DF160C22E1F0F7000465F1 /* Other */,
 			);
@@ -155,6 +164,17 @@
 				56DF15E222E1E7AE000465F1 /* Chat.storyboard */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		56DF161022E4904B000465F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				56DF161122E49069000465F1 /* EmojiView.swift */,
+				56DF161322E4907E000465F1 /* EmojiView.xib */,
+				56DF161522E490E6000465F1 /* EmojiViewCell.swift */,
+				56DF161722E49100000465F1 /* EmojiViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +282,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				56DF15E922E1E7AF000465F1 /* LaunchScreen.storyboard in Resources */,
+				56DF161822E49100000465F1 /* EmojiViewCell.xib in Resources */,
+				56DF161422E4907E000465F1 /* EmojiView.xib in Resources */,
 				56DF15E622E1E7AF000465F1 /* Assets.xcassets in Resources */,
 				56DF15E422E1E7AE000465F1 /* Chat.storyboard in Resources */,
 			);
@@ -289,7 +311,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				56DF15E122E1E7AE000465F1 /* ChatViewController.swift in Sources */,
+				56DF161622E490E6000465F1 /* EmojiViewCell.swift in Sources */,
 				56DF15DF22E1E7AE000465F1 /* AppDelegate.swift in Sources */,
+				56DF161222E49069000465F1 /* EmojiView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

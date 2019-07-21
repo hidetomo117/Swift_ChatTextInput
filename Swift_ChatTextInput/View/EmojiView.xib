@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmojiView" customModule="Swift_ChatTextInput" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="ucd-Fk-YgP" id="YgI-Oa-q4h"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="AvA-5U-PMp">
+            <rect key="frame" x="0.0" y="0.0" width="461" height="291"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ucd-Fk-YgP">
+                    <rect key="frame" x="0.0" y="0.0" width="461" height="291"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Joj-dV-Icq">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ucd-Fk-YgP" firstAttribute="top" secondItem="AvA-5U-PMp" secondAttribute="top" id="8VE-uz-cbU"/>
+                <constraint firstItem="ucd-Fk-YgP" firstAttribute="leading" secondItem="AvA-5U-PMp" secondAttribute="leading" id="BPP-b5-gva"/>
+                <constraint firstAttribute="bottom" secondItem="ucd-Fk-YgP" secondAttribute="bottom" id="dAx-q7-qqN"/>
+                <constraint firstAttribute="trailing" secondItem="ucd-Fk-YgP" secondAttribute="trailing" id="dgF-mF-UMd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-131.15942028985509" y="-161.04910714285714"/>
+        </view>
+    </objects>
+</document>
