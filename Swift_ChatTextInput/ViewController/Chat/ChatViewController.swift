@@ -10,17 +10,19 @@ import UIKit
 
 final class ChatViewController: UIViewController {
 
-    var testView: EmojiView?
-    var flag = false
+    private var testView: EmojiView?
+    private var flag = false
+    private var mentionView: UIView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        createUIView()
+        createEmojiView()
+        addNotification()
         
         /**
          大まかな機能
-         ・したからコレクションビューがにゅっと出てくる
+         ・したからコレクションビューがにゅっと出てくる -> OK
          ・テキストビューの大きさ変更
          ・テキストビューの入力内容に応じてメンション一覧を出したり、更新したり、非表示にしたり
         
@@ -29,10 +31,9 @@ final class ChatViewController: UIViewController {
          ・エスケープ処理
          ・入力した文字列からHTMLを生成する
          */
-        
     }
     
-    private func createUIView() {
+    private func createEmojiView() {
         
         let emojiView = EmojiView(frame: CGRect(x: 0 ,
                                                 y: self.view.bounds.height,
@@ -44,10 +45,8 @@ final class ChatViewController: UIViewController {
         guard let test = testView else {
             return
         }
-//        test.backgroundColor = UIColor.green
 
         self.view.addSubview(test)
-
     }
     
     private func show() {
@@ -80,6 +79,23 @@ final class ChatViewController: UIViewController {
             show()
         }
         flag = !flag
+    }
+    
+    
+    
+    @IBAction func tappedShowMentionView(_ sender: Any) {
+        
+        mentionView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 200))
+        mentionView?.backgroundColor = .green
+        self.view.addSubview(mentionView!)
+    }
+    
+    
+    
+    @IBAction func tappedChageSizeOfMentionView(_ sender: Any) {
+        
+        mentionView?.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 400)
+        
     }
     
     

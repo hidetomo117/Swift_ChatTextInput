@@ -169,12 +169,28 @@
 		56DF161022E4904B000465F1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				56DF161A22E4C0D4000465F1 /* MentionView */,
+				56DF161922E4C0BE000465F1 /* EmojiView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		56DF161922E4C0BE000465F1 /* EmojiView */ = {
+			isa = PBXGroup;
+			children = (
 				56DF161122E49069000465F1 /* EmojiView.swift */,
 				56DF161322E4907E000465F1 /* EmojiView.xib */,
 				56DF161522E490E6000465F1 /* EmojiViewCell.swift */,
 				56DF161722E49100000465F1 /* EmojiViewCell.xib */,
 			);
-			path = View;
+			path = EmojiView;
+			sourceTree = "<group>";
+		};
+		56DF161A22E4C0D4000465F1 /* MentionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MentionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
